@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<head>
+<title>Mishwar</title>
+</head>
+<body>
+   <style>
+      body{margin:0%}
+      .header {
+         background-color: #f3f1ee;
+         display: flex;
+         justify-content:space-between;
+         align-items: center;
+         padding: 10px 50px;
+      }
+.btn {
+
+background-color: rgba(205, 101, 4, 0.896);
+ padding: 4px 15px;
+color:#ffffff;
+border:none;
+ border-radius: 15px;
+ text-decoration: none;
+}
+.btn:hover {
+background-color:rgba(37, 126, 118, 0.652);
+}
+
+      .logo {
+         width: 100px;
+      }
+      .header-link a {
+ color :rgba(38, 104, 95, 0.632);
+ padding: 3px 15px;
+ text-decoration: none;
+ border-radius: 15px;
+     }
+      .header-link a:hover {
+         color :orange;
+           background-color: #acacaa;
+      }
+
+
+.landing-page{
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background-image: url('images/back.jpg');
+  background-size: cover;
+  background-position: center;
+display: flex;
+justify-content:flex-start;
+align-items:flex-start;
+padding-left: 300px;
+padding-top:110px;
+text-align:left;
+border-radius: 25px;
+overflow: hidden;
+margin: 15px auto; 
+color:rgb(206, 133, 8);
+}
+
+.person-box{
+  position: absolute;
+  right: 30px;
+  top: 62%;
+  transform: translateY(-50%);
+}
+.landing-page-search input {
+   border-radius: 50px;
+   border:none;
+   outline:none;
+   height: 30px;
+   padding: 0 10px;
+}
+.landing-page-search button {
+   position: absolute;
+   height: 30px;
+   left: 425px;
+}
+.trending { position: relative; display: block; width: 100%; box-sizing: border-box; padding: 50px 60px; background: #fff; background: #fff3e3; border-radius: 40px 40px 0 0;  padding-top: 30px}
+.trending-header { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto 40px; }
+.trending-header h2 { margin: 0; font-size: 34px; color: rgb(206, 133, 8); }
+.trending-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+.card { background: #ffffff; border-radius: 20px; padding: 22px 10px; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.08); transition: transform 0.25s, box-shadow 0.25s; cursor: pointer; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 10px 24px rgba(38,104,95,0.25); }
+.card img { width: 110px; height: 110px; object-fit: contain; display: block; margin: 0 auto 12px; }
+.card p { margin: 0; font-size: 13px; color: #888; }
+.card h3 { margin: 4px 0 0; font-size: 17px; font-weight: bold; color: rgba(38, 104, 95, 0.9); }html { scroll-behavior: smooth; }
+.popular { position: relative; display: block; box-sizing: border-box; padding: 20px 40px 50px; }
+.popular-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.popular-header h2 { margin: 0; font-size: 34px; color: rgb(206,133,8); }
+.popular-cards { display: flex; justify-content: space-between; gap: 10px; flex-wrap: nowrap; }
+.rest-card { flex: 1; max-width: 170px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px 10px; background: #fff; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.25s ease; }
+.rest-card:hover { transform: translateY(-8px); }
+.rest-card img { width: 90px; height: 90px; object-fit: contain; }
+.rest-card h3 { margin: 10px 0 2px; font-size: 15px; }
+.rest-card p { margin: 0; font-size: 12px; color: #888; }
+.popular-header { display: flex !important; flex-direction: row !important; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.rest-card img { width: 120px; height: 120px; object-fit: contain; }
+.trending { border-radius: 40px; }
+     </style>
+   <div class="header">
+    <img class="logo" src="images/logo.png"/>
+   <div class="header-link">
+          <a href="#">Home</a>
+     <a href="#">Services</a>
+     <a href="#">Track Order</a>
+     <a href="#">Contact Us</a>
+     <a href="#">Cart</a>
+<BUtton class="btn">SIGN IN</BUtton>
+   </div>
+   </div>
+   <!-- landing page -->
+   <div class="landing-page">
+<div>
+<h2>Welcome to Mishwar</h2>
+<span>Mishwar - Best Delivery Service</span>
+<p>Fast. Fresh. Right to Your Door-
+سريع   سخن     لحد    باب   بيتك</p>
+<div class="landing-page-search">
+<input placeholder="Start typing..." />
+<button class="btn">search</button>
+</div>
+<div class="person-box">
+   <img src="images/person.png" />
+</div>
+   </div>
+      </div>
+
+   <!-- restaurants&more -->
+   <section class="trending">
+  <div class="trending-header">
+    <h2>Explore Mishwar</h2>
+    <a href="#" class="btn">View all</a>
+  </div>
+  <div class="trending-cards">
+<a href="#popular" style="text-decoration:none"><div class="card"><img src="images/1.png"><p>Food</p><h3>Restaurants</h3></div></a>
+<div class="card"><img src="images/2.png"><p>Fresh</p><h3>Groceries</h3></div>
+<div class="card"><img src="images/6.png"><p>Health</p><h3>Pharmacy</h3></div>
+<div class="card"><img src="images/3.png"><p>Gifts</p><h3>Flowers</h3></div>
+<div class="card"><img src="images/8.png"><p>Fresh baked</p><h3>Bakery</h3></div>
+<div class="card"><img src="images/7.png"><p>Drinks</p><h3>Coffee</h3></div>
+<div class="card"><img src="images/5.png"><p>Treats</p><h3>Sweets</h3></div>
+<div class="card"><img src="images/4.png"><p>Everything</p><h3>Shops</h3></div>
+<div class="card"><img src="images/9.png"><p>Your order</p><h3>Cart</h3></div>
+</div>
+</section>
+<section class="popular" id="popular">
+<div class="popular-header">
+<h2>Popular Restaurants</h2>
+<a href="#" class="btn">View all</a>
+</div>
+<div class="popular-cards">
+<div class="rest-card"><img src="images/b1.png"><h3>Tabali</h3><p>Oriental · 30-40 min</p></div>
+<div class="rest-card"><img src="images/b2.png"><h3>Heart Attack</h3><p>Burgers · 25-35 min</p></div>
+<div class="rest-card"><img src="images/b3.png"><h3>Abu Tarek</h3><p>Koshary · 20-30 min</p></div>
+<div class="rest-card"><img src="images/b4.png"><h3>Sheikh El Mandi</h3><p>Mandi · 35-45 min</p></div>
+<div class="rest-card"><img src="images/b5.png"><h3>Sobhy Kaber</h3><p>Grills · 30-40 min</p></div>
+<div class="rest-card"><img src="images/b6.png"><h3>B Laban</h3><p>Egyptian · 25-35 min</p></div>
+</div>
+</section>
+</body>
