@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mishwar</title>
 </head>
 <body>
@@ -98,6 +100,34 @@ color:rgb(206, 133, 8);
 .popular-header { display: flex !important; flex-direction: row !important; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .rest-card img { width: 120px; height: 120px; object-fit: contain; }
 .trending { border-radius: 40px; }
+
+/* ===== Mobile / tablet ===== */
+img{max-width:100%}
+@media (max-width: 900px){
+  .header{padding:10px 16px;flex-wrap:wrap;gap:8px}
+  .header-link{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+  .header-link a{padding:3px 8px}
+  .landing-page{height:auto;min-height:420px;padding:30px 20px 170px;margin:15px 10px;box-sizing:border-box}
+  .landing-page > div{width:100%}
+  .person-box{right:12px;top:auto;bottom:0;transform:none}
+  .person-box img{height:150px;width:auto;display:block}
+  .landing-page-search{display:flex;gap:8px;align-items:center;position:relative;z-index:2}
+  .landing-page-search input{flex:1;min-width:0}
+  .landing-page-search button{position:static;left:auto}
+  .trending{padding:30px 20px}
+  .trending-header h2,.popular-header h2{font-size:26px}
+  .popular{padding:20px 16px 40px}
+  .popular-cards{flex-wrap:wrap;justify-content:center}
+  .rest-card{flex:0 0 calc(50% - 10px);max-width:none;box-sizing:border-box}
+}
+@media (max-width: 480px){
+  .logo{width:80px}
+  .landing-page h2{font-size:22px;margin-top:0}
+  .person-box img{height:120px}
+  .trending-cards{grid-template-columns:repeat(2,1fr);gap:14px}
+  .card img{width:80px;height:80px}
+  .rest-card img{width:90px;height:90px}
+}
      </style>
    <div class="header">
     <img class="logo" src="images/logo.png"/>
@@ -115,8 +145,8 @@ color:rgb(206, 133, 8);
 <div>
 <h2>Welcome to Mishwar</h2>
 <span>Mishwar - Best Delivery Service</span>
-<p>Fast. Fresh. Right to Your Door-
-سريع   سخن     لحد    باب   بيتك</p>
+<p>Fast. Fresh. Right to Your Door<br>
+<span dir="rtl" lang="ar" style="display:block;text-align:right">سريع سخن لحد باب بيتك</span></p>
 <div class="landing-page-search">
 <input placeholder="Start typing..." />
 <button class="btn">search</button>
